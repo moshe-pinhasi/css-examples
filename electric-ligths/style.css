@@ -1,0 +1,55 @@
+
+.electric-box {
+    background-color: black;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    position: relative;
+    transition: all .3s;
+    opacity: 0;
+    animation: flicker 0.8s linear infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+li:nth-child(1) {
+    background-color: red;
+    animation-delay: .2s;
+}
+
+li:nth-child(2) {
+    background-color: yellow;
+    animation-delay: .6s;
+}
+
+li:nth-child(3) {
+    background-color: blue;
+    animation-delay: .3s;
+}
+
+li:nth-child(4) {
+    background-color: greenyellow;
+    animation-delay: .5;
+}
+
+li:nth-child(5) {
+    background-color: orange;
+    animation-delay: .4s;
+}
+

@@ -1,0 +1,44 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-text {
+    font-size: 16px;
+    background-color: khaki;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+.my-text:before,
+.my-text:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: khaki;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.my-text:before {
+    left: -50px;
+    box-shadow: -50px 0 0 khaki;
+}
+
+.my-text:after {
+    right: -50px;
+    box-shadow: 50px 0 0 khaki;
+}
+
+
