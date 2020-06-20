@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .electric-box {
     background-color: black;
@@ -20,12 +26,6 @@ ul li {
     transition: all .3s;
     opacity: 0;
     animation: flicker 0.8s linear infinite;
-}
-
-@keyframes flicker {
-    0% { opacity: 0; }
-    30% { opacity: 1; }
-    100% { opacity: 0; }
 }
 
 li:nth-child(1) {
@@ -53,3 +53,8 @@ li:nth-child(5) {
     animation-delay: .4s;
 }
 
+@keyframes flicker {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    100% { opacity: 0; }
+}
